@@ -1,0 +1,13 @@
+<projects>
+    <project>
+        <key>BACK</key>
+        <summary>Backend project</summary>
+        <tasks>
+            <task>
+                <key>BACK-1</key>
+                <summary>First task</summary>
+                <description>Task description</description>
+            </task>
+        </tasks>
+    </project>
+</projects>

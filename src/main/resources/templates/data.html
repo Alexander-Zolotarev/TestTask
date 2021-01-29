@@ -1,0 +1,24 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Тег TABLE</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>Название проекта (ключ проекта)</th>
+            <th>Название задачи (ключ задачи)</th>
+            <th>Описание</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="projectDTO : ${projects}">
+            <td th:text="${projectDTO.getProjectKey()}"></td>
+            <td th:text="${projectDTO.getTaskKey()}"></td>
+            <td th:text="${projectDTO.getTaskDescription()}"></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

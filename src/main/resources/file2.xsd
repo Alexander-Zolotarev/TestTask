@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="projects">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="project" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="key" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+                            <xs:element name="summary" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+                            <xs:element name="tasks">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="task" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="key" type="xs:string" maxOccurs="unbounded"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="summary" type="xs:string" maxOccurs="unbounded"
+                                                                minOccurs="0"/>
+                                                    <xs:element name="description" type="xs:string"
+                                                                maxOccurs="unbounded" minOccurs="0"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
